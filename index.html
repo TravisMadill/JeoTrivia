@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="./jep.js"></script>
+		<script src="./controller.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div class='w3-container'>&nbsp;</div>
+		<div class='question-field w3-container'>
+			<noscript>Y'need some JavaScript support, my dude.</noscript>
+		</div>
+		<div id='ansmodal' class="w3-modal">
+			<div class="w3-modal-content w3-black w3-card-4">
+				<header class="w3-container w3-red">
+					<span id="close-question-modal" class="w3-button w3-display-topright">&times;</span>
+					<h4 id='answer-header'>For $[value]...</h3>
+				</header>
+				<div class="w3-container">
+					<div id='question-display' class=" w3-container w3-padding">
+						Sample question
+					</div>
+					<button id="btn-ans-reveal" onclick="revealAnswer()" class="w3-button w3-block w3-red">
+						Reveal answer
+					</button>
+				</div>
+				
+				<footer id="answer-footer" class="w3-container">
+					<div id="answer-display" class="w3-container w3-padding w3-border-top w3-border-red">
+						Sample answer
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- <div class='marq-area'>
+			<div class="marq-line w3-large">
+				Maybe this'll be long enough to make an appropriate test.
+			</div>
+			<div class="marq-line">And perhaaaaaaaaaaaaaaaaaaaaaaps this, too.</div>
+			<div class="marq-line">Meh, I dunno. Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah.</div>
+		</div> -->
+	</body>
+</html>
